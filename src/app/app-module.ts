@@ -15,6 +15,7 @@ import { Users } from './users/users';
 import { Navbar } from './navbar/navbar';
 import { ListProviders } from './list-providers/list-providers';
 import { AddProvider } from './add-provider/add-provider';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,12 +29,15 @@ import { AddProvider } from './add-provider/add-provider';
     BeginWithUpper2Pipe,
     Users,
     Navbar,
-    ListProviders,
-    AddProvider
+    AddProvider,
+    ListProviders
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
